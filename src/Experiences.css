@@ -1,0 +1,91 @@
+.experiences-page {
+  padding: 56px 48px 100px;
+}
+
+.experiences-header {
+  margin-bottom: 48px;
+}
+
+.section-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.experiences-header h1 {
+  margin: 0;
+}
+
+
+/* ---------- each job ---------- */
+
+.experience {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 64px;
+
+  padding: 48px 0;
+  border-top: 1px solid var(--border);
+}
+
+
+/* ---------- left column ---------- */
+
+.experience-meta h2 {
+  font-size: 18px;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+.experience-location,
+.experience-date {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.experience-date {
+  margin-top: 4px;
+}
+
+
+/* ---------- right column ---------- */
+
+.experience-content h3 {
+  color: var(--text-h);
+  font-size: 24px;
+  font-weight: 500;
+
+  margin: 0 0 24px;
+}
+
+.experience-content ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.experience-content li {
+  padding-left: 6px;
+  margin-bottom: 14px;
+
+  line-height: 1.65;
+}
+
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 768px) {
+  .experiences-page {
+    padding: 48px 24px 72px;
+  }
+
+  .experience {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .experience-content h3 {
+    font-size: 21px;
+  }
+}
