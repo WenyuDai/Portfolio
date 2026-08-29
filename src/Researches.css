@@ -1,0 +1,104 @@
+.researches-page {
+  padding: 56px 48px 100px;
+}
+
+
+/* ---------- page header ---------- */
+
+.researches-header {
+  margin-bottom: 48px;
+}
+
+.researches-header .section-label {
+  margin: 0 0 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+
+  color: var(--accent);
+}
+
+.researches-header h1 {
+  margin: 0;
+}
+
+
+/* ---------- each research project ---------- */
+
+.research {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 64px;
+
+  padding: 48px 0;
+  border-top: 1px solid var(--border);
+}
+
+
+/* ---------- left column ---------- */
+
+.research-meta h2 {
+  margin: 0 0 18px;
+
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 500;
+
+  color: var(--text-h);
+}
+
+.research-date {
+  font-size: 15px;
+  line-height: 1.6;
+
+  color: var(--text);
+}
+
+
+/* ---------- right column ---------- */
+
+.research-content h3 {
+  margin: 0 0 24px;
+
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 500;
+
+  color: var(--text-h);
+}
+
+.research-content ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.research-content li {
+  padding-left: 6px;
+  margin-bottom: 14px;
+
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.research-content li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 768px) {
+  .researches-page {
+    padding: 48px 24px 72px;
+  }
+
+  .research {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .research-content h3 {
+    font-size: 21px;
+  }
+}

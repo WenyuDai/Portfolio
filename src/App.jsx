@@ -5,6 +5,7 @@ import './App.css'
 
 import Experiences from "./Experiences";
 import Portfolio from "./Portfolio";
+import Researches from "./Researches";
 
 function App() {
   const [backendReady, setBackendReady] = useState(false);
@@ -60,7 +61,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Portfolio />} />
           <Route path="/experiences" element={<Experiences />} />
-          <Route path="/researches" element={<h3>Content coming soon</h3>} />
+          <Route path="/researches" element={<Researches />} />
         </Routes>
 
     </>
