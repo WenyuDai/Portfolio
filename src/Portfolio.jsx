@@ -33,6 +33,16 @@ function Portfolio() {
               <p key={index}>{paragraph}</p>
             ))}
         </div>
+        <p>
+          {portfolio.linkedin.prefix}{" "}
+          <a
+            href={portfolio.linkedin.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {portfolio.linkedin.label}
+          </a>.
+        </p>
       </div>
     </main>
   )
