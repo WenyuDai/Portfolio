@@ -4,9 +4,14 @@ import "./Portfolio.css"
 
 function Portfolio() {
   const [portfolio, setPortfolio] = useState({
-      intro: "",
-      content: ""
-    });
+    intro: "",
+    content: "",
+    linkedin: {
+      prefix: "",
+      label: "",
+      url: ""
+    }
+  });
 
   useEffect(() => {
     async function fetchPortfolio() {
@@ -32,17 +37,17 @@ function Portfolio() {
             .map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
+          <p>
+            {portfolio.linkedin.prefix}{" "}
+            <a
+              href={portfolio.linkedin.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {portfolio.linkedin.label}
+            </a>.
+          </p>
         </div>
-        <p>
-          {portfolio.linkedin.prefix}{" "}
-          <a
-            href={portfolio.linkedin.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {portfolio.linkedin.label}
-          </a>.
-        </p>
       </div>
     </main>
   )
